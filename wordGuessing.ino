@@ -64,7 +64,7 @@ int get_good_letter_count() {
 }
 
 int check_win_lose() {
-    if (tries > max_tries) return LOSE;
+    if (tries == max_tries) return LOSE;
     int word_length = strlen(words[word_index]);
     for (int i = 0; i < word_length; i++) {
         if ( check_letter(words[word_index][i]) == 0) {
@@ -140,6 +140,7 @@ void print_screen() {
 }
 
 void win_screen() {
+    delay(1000);
     lcd.clear();
     lcd.setCursor(4, 0);
     lcd.print("You Win!");
