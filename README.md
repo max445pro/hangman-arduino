@@ -1,4 +1,4 @@
-# hangman-arduino
+# Hangman on arduino
 This is a little hangman game coded for the arduino using an 16x2 lcd display.
 
 Required Material:
